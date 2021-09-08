@@ -1,8 +1,11 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.sikuli.api.Screen;
 import org.sikuli.script.Screen;
 
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 
@@ -26,7 +29,7 @@ public class YoutubeVideoTest {
         Screen s = new Screen();
 
         //pause icon
-        Pattern playImg = new Pattern("resources\\pause.png");
+        Pattern playImg = new Pattern("pause.png");
         s.wait(playImg, 2000);
         s.click();
         s.click();
