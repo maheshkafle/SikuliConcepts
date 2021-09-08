@@ -28,8 +28,32 @@ public class YoutubeVideoTest {
         //create the object reference of screen class
         Screen s = new Screen();
 
-        //pause icon
+        //click pause icon
         Pattern playImg = new Pattern("pause.png");
+        s.wait(playImg, 2000);
+        s.click();
+        s.click();
+
+        //click play icon
+        Pattern playImg = new Pattern("play.png");
+        s.wait(playImg, 2000);
+        s.click();
+        s.click();
+
+        //click wheel icon
+        Pattern playImg = new Pattern("wheel.png");
+        s.wait(playImg, 2000);
+        s.click();
+        s.click();
+
+        //click auto icon
+        Pattern playImg = new Pattern("auto.png");
+        s.wait(playImg, 2000);
+        s.click();
+        s.click();
+
+        //click img_360 icon
+        Pattern playImg = new Pattern("img_360.png");
         s.wait(playImg, 2000);
         s.click();
         s.click();
